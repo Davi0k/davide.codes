@@ -100,21 +100,21 @@ const Home = (props) => {
           <Slider />
         </div>
 
-        <div className="flex grid grid-cols-10 mb-10">
-          <a href="https://buildyourpath.it" target="_blank" className="col-span-4 mt-4 py-1">
+        <div className="flex grid grid-cols-10 mb-16">
+          <a href="https://buildyourpath.it" target="_blank" className="col-span-4 mt-4">
             <img className="w-64 m-auto pointer-events-none" src="partners/byp.png" />
           </a>   
 
-          <a href="https://pulsing.io" target="_blank" className="col-span-2 py-1">
+          <a href="https://pulsing.io" target="_blank" className="col-span-2">
             <img className="w-20 m-auto pointer-events-none" src="partners/pulsing.png" />
           </a>   
 
-          <a href="https://aryel.io" target="_blank" className="col-span-4 mt-4 py-1">
+          <a href="https://aryel.io" target="_blank" className="col-span-4 mt-4">
             <img className="w-40 m-auto pointer-events-none" src="partners/aryel.png" />
           </a>       
         </div>
 
-        <div id="contacts">
+        <div id="contacts" className="mb-10">
           <h1 className="text-3xl font-medium mb-2">Contacts & Links 🥼</h1>
 
           <span className="text-lg">
