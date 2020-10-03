@@ -8,7 +8,7 @@ const Skill = ({ section }) => {
     <div className="py-4">
       {
         section.map(element => (
-          <div className="inline-block" key={element.name}>
+          <div className="inline-block mb-2" key={element.name}>
             <span 
               className="rounded-full opacity-75 hover:opacity-100 active:opacity-100 px-5 py-1 text-sm font-bold mr-2 cursor-pointer"
               style={{ backgroundColor: element.color }}

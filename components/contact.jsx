@@ -19,14 +19,14 @@ const Contact = ({ section }) => {
       />
       
       <textarea 
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-24 mb-6" 
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-24 mb-5" 
         placeholder="A job offer? An idea for a collaboration? A Feed-Back on one of my works? Let me know right away!"
         onChange={ event => setMessage(event.target.value) }
       />
 
       { status == null &&
         <button 
-          className="w-64 shadow bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10"
+          className="w-64 shadow bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
 
           disabled={!(contact && message)}
 
@@ -57,16 +57,27 @@ const Contact = ({ section }) => {
       }
 
       { status == true &&
-        <button className="w-64 shadow bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10">
+        <button className="w-64 shadow bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
           Message sent! ✔
         </button>
       }
 
       { status == false &&
-        <button className="w-64 shadow bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10">
+        <button className="w-64 shadow bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
           Try again later... ❌
         </button>
       }
+
+      <button 
+        className="w-64 shadow bg-purple-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 xs:mt-4 sm:mt-0"
+        onClick={ event => {
+          event.preventDefault();
+
+          window.open("mailto:main@davide.codes?subject=Hi Davide! I have an Amazing Proposal for you", "_blank");
+        }}
+      >
+        Write me a message 📧
+      </button>
     </form> 
   );
 }
