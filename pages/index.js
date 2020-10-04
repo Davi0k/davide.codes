@@ -91,7 +91,7 @@ const Home = (props) => {
         </div>
 
         <div id="skills" className="py-2">
-          <h1 className="text-3xl font-medium mb-3">Skills and Knowledge ⚡</h1>
+          <h1 className="text-3xl font-medium mb-3">Skills and Knowledge 🚩</h1>
 
           <span className="text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -101,13 +101,13 @@ const Home = (props) => {
           </span>
 
           <div className="mt-10 mb-10 block">
-            <h1 className="text-xl mb-5 font-semibold">&#8226; Main Programming and Markup Languages:</h1>
+            <h1 className="text-2xl mb-5 font-semibold">⭐ Main Programming and Markup Languages:</h1>
 
             <span className="text-lg">
               Everything always starts with the best <Bold>Programming Languages</Bold>! 
               Since I started my career in the world of <Underline>Information Technology</Underline>, 
               I have always tested myself with the most complex languages,
-              without however neglecting the <Mark>most popular</Mark> and <Mark>constantly growing</Mark> ones,
+              without however neglecting the <i>most popular</i> and <i>constantly growing</i> ones,
               which today make up the majority of my <Bold>Arsenal</Bold>. 
             </span>
 
@@ -117,10 +117,10 @@ const Home = (props) => {
           </div>
 
           <div className="mb-10 block">
-            <h1 className="text-xl mb-6 font-semibold">&#8226; Main Libraries and Frameworks:</h1>
+            <h1 className="text-2xl mb-6 font-semibold">⭐ Main Libraries and Frameworks:</h1>
 
             <span className="text-lg">
-              <Bold>Libraries</Bold> and <Bold>Frameworks</Bold> are now the foundation of any reputable <Mark>Software</Mark>. 
+              <Bold>Libraries</Bold> and <Bold>Frameworks</Bold> are now the foundation of any reputable <i>Software</i>. 
               Being a <Underline>Full-Stack Developer</Underline>, there are many that I use, selecting them based on the final goal. 
               From those dedicated to the <Bold>Back-End</Bold> development to those dedicated to the <Bold>Front-End</Bold>.
             </span>
@@ -131,11 +131,11 @@ const Home = (props) => {
           </div>
 
           <div className="mb-2 block">
-            <h1 className="text-xl mb-6 font-semibold">&#8226; Main Tools and Services:</h1>
+            <h1 className="text-2xl mb-6 font-semibold">⭐ Main Tools and Services:</h1>
 
             <span className="text-lg">
-              Like any respected <Bold>Developer</Bold>, I am not lacking in knowledge about all that range of tools and services essential 
-              to guarantee an ideal <Mark>Work-Flow</Mark>. Starting from <Underline>Version Control Systems</Underline> (and related services) 
+              Like any respected <Bold>Developer</Bold>, I am not lacking in knowledge about all that range of <Bold>Tools</Bold> and <Bold>Services</Bold> essential 
+              to guarantee an ideal <i>Work-Flow</i>. Starting from <Underline>Version Control Systems</Underline> (and related services), moving on to the best <Underline>Package Managers</Underline>, 
               up to the best <Underline>DBMS</Underline>.
             </span>
 
@@ -148,18 +148,18 @@ const Home = (props) => {
         </div>
 
         <div id="contacts" className="mt-4 mb-8">
-          <h1 className="text-3xl font-medium mb-3">Contact Me Now 🥼</h1>
+          <h1 className="text-3xl font-medium mb-3">Contact Me Now 💬</h1>
 
           <span className="text-lg">
             If you are interested in contacting me to propose a <Bold>collaboration</Bold> , a <Bold>job offer</Bold>, 
-            an <Bold>idea for a project</Bold> or just to express <Bold>your opinion</Bold> on one of my work, <Underline>you are in the right place</Underline>!
-            You can complete the small <Mark color="blue">Form</Mark> below 
+            an <Bold>idea for a project</Bold> or just to express <Bold>your opinion</Bold> on one of my work, <i>you are in the right place</i>!
+            You can complete the small <Underline>Form</Underline> below 
             by providing any of your contacts and a small description of your motivation, 
-            or you can write me and send me an <Mark color="blue">E-Mail</Mark> directly. 
+            or you can write me and send me an <Underline>E-Mail</Underline> directly. 
             
             <br/><br/> 
             
-            <Mark color="green" intensity="300">I'll get back to you within 24 Hours 💬</Mark>
+            <Mark color="yellow" intensity="300">I'll get back to you within 24 Hours ⚡</Mark>
           </span>
 
           <Contact />
