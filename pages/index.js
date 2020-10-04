@@ -8,6 +8,16 @@ import Contact from "../components/contact";
 
 import * as skills from "../utilities/skills";
 
+const Bold = (props) => <b className="font-semibold text-1xl">{props.children}</b>;
+
+const Underline = (props) => <span className="underline text-1xl font-light">{props.children}</span>;
+
+const Mark = (props) => (
+  <mark className={`bg-${props.color || "yellow"}-${props.intensity || "200"}`}>
+    &nbsp; {props.children} &nbsp;
+  </mark>
+);
+
 const Home = (props) => {
   const age = (birthday) => {
     birthday = new Date(birthday);
@@ -81,7 +91,7 @@ const Home = (props) => {
         </div>
 
         <div id="skills" className="py-2">
-          <h1 className="text-3xl font-medium mb-3">Skills & Knowledge ⚡</h1>
+          <h1 className="text-3xl font-medium mb-3">Skills and Knowledge ⚡</h1>
 
           <span className="text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -94,8 +104,11 @@ const Home = (props) => {
             <h1 className="text-xl mb-5 font-semibold">&#8226; Main Programming and Markup Languages:</h1>
 
             <span className="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Everything always starts with the best <Bold>Programming Languages</Bold>! 
+              Since I started my career in the world of <Underline>Information Technology</Underline>, 
+              I have always tested myself with the most complex languages,
+              without however neglecting the <Mark>most popular</Mark> and <Mark>constantly growing</Mark> ones,
+              which today make up the majority of my <Bold>Arsenal</Bold>. 
             </span>
 
             <div className="mt-4">
@@ -104,11 +117,12 @@ const Home = (props) => {
           </div>
 
           <div className="mb-10 block">
-            <h1 className="text-xl mb-6 font-semibold">&#8226; Main Frameworks and Libraries:</h1>
+            <h1 className="text-xl mb-6 font-semibold">&#8226; Main Libraries and Frameworks:</h1>
 
             <span className="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              <Bold>Libraries</Bold> and <Bold>Frameworks</Bold> are now the foundation of any reputable <Mark>Software</Mark>. 
+              Being a <Underline>Full-Stack Developer</Underline>, there are many that I use, selecting them based on the final goal. 
+              From those dedicated to the <Bold>Back-End</Bold> development to those dedicated to the <Bold>Front-End</Bold>.
             </span>
 
             <div className="mt-4">
@@ -120,8 +134,9 @@ const Home = (props) => {
             <h1 className="text-xl mb-6 font-semibold">&#8226; Main Tools and Services:</h1>
 
             <span className="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Like any respected <Bold>Developer</Bold>, I am not lacking in knowledge about all that range of tools and services essential 
+              to guarantee an ideal <Mark>Work-Flow</Mark>. Starting from <Underline>Version Control Systems</Underline> (and related services) 
+              up to the best <Underline>DBMS</Underline>.
             </span>
 
             <div className="mt-4">
@@ -133,12 +148,18 @@ const Home = (props) => {
         </div>
 
         <div id="contacts" className="mt-4 mb-8">
-          <h1 className="text-3xl font-medium mb-3">Contacts & Links 🥼</h1>
+          <h1 className="text-3xl font-medium mb-3">Contact Me Now 🥼</h1>
 
           <span className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            If you are interested in contacting me to propose a <Bold>collaboration</Bold> , a <Bold>job offer</Bold>, 
+            an <Bold>idea for a project</Bold> or just to express <Bold>your opinion</Bold> on one of my work, <Underline>you are in the right place</Underline>!
+            You can complete the small <Mark color="blue">Form</Mark> below 
+            by providing any of your contacts and a small description of your motivation, 
+            or you can write me and send me an <Mark color="blue">E-Mail</Mark> directly. 
+            
+            <br/><br/> 
+            
+            <Mark color="green" intensity="300">I'll get back to you within 24 Hours 💬</Mark>
           </span>
 
           <Contact />

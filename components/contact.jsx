@@ -14,7 +14,7 @@ const Contact = ({ section }) => {
       <input 
         className="col-span-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-10 mb-4" 
         type="text" 
-        placeholder="If you want, you can provide any kind of contact that allows me to reach you!" 
+        placeholder="Provide me with any contact that allows me to reach you!" 
         onChange={ event => setContact(event.target.value) }
       />
       
@@ -52,19 +52,19 @@ const Contact = ({ section }) => {
             window.setTimeout(() => setStatus(null), 10000);
           }}
         >
-          Contact me now 🌎
+          Submit your request &nbsp;🌎
         </button>
       }
 
       { status == true &&
         <button className="w-64 shadow bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
-          Message sent! ✔
+          Message sent! &nbsp;✔
         </button>
       }
 
       { status == false &&
         <button className="w-64 shadow bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
-          Try again later... ❌
+          Try again later... &nbsp;❌
         </button>
       }
 
@@ -76,7 +76,7 @@ const Contact = ({ section }) => {
           window.open("mailto:main@davide.codes?subject=Hi Davide! I have an Amazing Proposal for you", "_blank");
         }}
       >
-        Write me a message 📧
+        Write me a message &nbsp;📧
       </button>
     </form> 
   );
