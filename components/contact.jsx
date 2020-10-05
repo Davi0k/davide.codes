@@ -69,7 +69,7 @@ const Contact = ({ section }) => {
       }
 
       <button 
-        className="w-64 shadow bg-purple-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 xs:mt-4 sm:mt-0"
+        className="w-64 shadow bg-purple-500 hover:bg-purple-600  text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 xs:mt-4 sm:mt-0"
         onClick={ event => {
           event.preventDefault();
 

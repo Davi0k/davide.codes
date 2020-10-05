@@ -13,7 +13,7 @@ const Bold = (props) => <b className="font-semibold text-1xl">{props.children}</
 const Underline = (props) => <span className="underline text-1xl font-light">{props.children}</span>;
 
 const Mark = (props) => (
-  <mark className={`bg-${props.color || "yellow"}-${props.intensity || "200"}`}>
+  <mark className={`bg-${props.color || "yellow"}-${props.intensity || "200"} text-xl`}>
     &nbsp; {props.children} &nbsp;
   </mark>
 );
@@ -94,52 +94,83 @@ const Home = (props) => {
           <h1 className="text-3xl font-medium mb-3">Skills and Knowledge 🚩</h1>
 
           <span className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className="mb-4">
+              The difference between a decent and a good programmer is certainly dictated by the skills, 
+              knowledge and skills he has developed in his career. I often define myself as "T-Shaped", a 
+              programmer with great experience in a single and vast field (such as Web-Developing) but 
+              who does not neglect other branches of his profession. 
+            </p>
+          
+            <p className="mb-4">
+              In fact, in addition to the world of Web Programming, 
+              I also love working at a low level, especially with Embedded Systems, 
+              and also with the most modern platforms for VR, AR and MR. 
+            </p>
+
+            <p> 
+              Below, I list most of my Skills grouped by macro-categories. 
+              If you want to know more, you can contact me through the appropriate section! 
+            </p>     
           </span>
 
-          <div className="mt-10 mb-10 block">
-            <h1 className="text-2xl mb-5 font-semibold">⭐ Main Programming and Markup Languages:</h1>
+          <div className="mt-10 block">
+            <h1 className="text-2xl mb-4 font-semibold">⭐&nbsp;&nbsp;Programming and Markup Languages:</h1>
 
             <span className="text-lg">
-              Everything always starts with the best <Bold>Programming Languages</Bold>! 
-              Since I started my career in the world of <Underline>Information Technology</Underline>, 
-              I have always tested myself with the most complex languages,
-              without however neglecting the <i>most popular</i> and <i>constantly growing</i> ones,
-              which today make up the majority of my <Bold>Arsenal</Bold>. 
+              <p className="mb-4">
+                Everything always starts with the best Programming Languages! 
+                Since I started my career in the world of Information Technology, 
+                I have always tested myself with the most complex languages,
+                without however neglecting the most popular and constantly growing ones,
+                which today make up the majority of my Arsenal.  
+              </p>
+
+              <p>
+
+              </p>
             </span>
 
-            <div className="mt-4">
+            <div className="mt-5">
               { skills.languages.map(section => <Skill section={section} key={skills.languages.indexOf(section)}/>) }
             </div>
           </div>
 
-          <div className="mb-10 block">
-            <h1 className="text-2xl mb-6 font-semibold">⭐ Main Libraries and Frameworks:</h1>
+          <div className="mt-10 block">
+            <h1 className="text-2xl mb-4 font-semibold">⭐&nbsp;&nbsp;Libraries and Frameworks:</h1>
 
             <span className="text-lg">
-              <Bold>Libraries</Bold> and <Bold>Frameworks</Bold> are now the foundation of any reputable <i>Software</i>. 
-              Being a <Underline>Full-Stack Developer</Underline>, there are many that I use, selecting them based on the final goal. 
-              From those dedicated to the <Bold>Back-End</Bold> development to those dedicated to the <Bold>Front-End</Bold>.
+              <p className="mb-4">
+                Libraries and Frameworks are now the foundation of any reputable Software. 
+                Being a Full-Stack Developer, there are many that I use, selecting them based on the final goal. 
+                From those dedicated to the Back-End to those dedicated to the Front-End.
+              </p>
+
+              <p>
+
+              </p>
             </span>
 
-            <div className="mt-4">
+            <div className="mt-5">
               { skills.frameworks.map(section => <Skill section={section} key={skills.frameworks.indexOf(section)}/>) }
             </div>
           </div>
 
-          <div className="mb-2 block">
-            <h1 className="text-2xl mb-6 font-semibold">⭐ Main Tools and Services:</h1>
+          <div className="mt-10 block">
+            <h1 className="text-2xl mb-4 font-semibold">⭐&nbsp;&nbsp;Tools and Services:</h1>
 
             <span className="text-lg">
-              Like any respected <Bold>Developer</Bold>, I am not lacking in knowledge about all that range of <Bold>Tools</Bold> and <Bold>Services</Bold> essential 
-              to guarantee an ideal <i>Work-Flow</i>. Starting from <Underline>Version Control Systems</Underline> (and related services), moving on to the best <Underline>Package Managers</Underline>, 
-              up to the best <Underline>DBMS</Underline>.
+              <p className="mb-4">
+                Like any respected Developer, I am not lacking in knowledge about all that range of Tools and Services essential 
+                to guarantee an ideal Work-Flow. Starting from the most used Version Control Systems, moving on to the most popular Package Managers, 
+                up to the best DBMS.
+              </p>
+
+              <p>
+                
+              </p>
             </span>
 
-            <div className="mt-4">
+            <div className="mt-5">
               { skills.tools.map(section => <Skill section={section} key={skills.tools.indexOf(section)}/>) }
             </div>
           </div>
@@ -147,19 +178,22 @@ const Home = (props) => {
           <Slider />
         </div>
 
-        <div id="contacts" className="mt-4 mb-8">
+        <div id="contacts" className="mt-6 mb-8">
           <h1 className="text-3xl font-medium mb-3">Contact Me Now 💬</h1>
 
           <span className="text-lg">
-            If you are interested in contacting me to propose a <Bold>collaboration</Bold> , a <Bold>job offer</Bold>, 
-            an <Bold>idea for a project</Bold> or just to express <Bold>your opinion</Bold> on one of my work, <i>you are in the right place</i>!
-            You can complete the small <Underline>Form</Underline> below 
-            by providing any of your contacts and a small description of your motivation, 
-            or you can write me and send me an <Underline>E-Mail</Underline> directly. 
+            <p className="mb-4">
+              If you are interested in contacting me to propose a collaboration, a job offer, 
+              an idea for a project or just to express your opinion on one of my work, you are in the right place!
+            </p>
+
+            <p className="mb-8">
+              You can complete the Form below 
+              by providing any of your contacts and a small description of your motivation, 
+              or you can write me and send me an E-Mail directly. 
+            </p>
             
-            <br/><br/> 
-            
-            <Mark color="yellow" intensity="300">I'll get back to you within 24 Hours ⚡</Mark>
+            <Mark color="yellow" intensity="300">I will get back to you within 24 Hours</Mark>
           </span>
 
           <Contact />
