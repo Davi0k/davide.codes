@@ -190,7 +190,8 @@ const Home = (props) => {
             <p className="mb-8">
               You can complete the Form below 
               by providing any of your contacts and a small description of your motivation, 
-              or you can write me and send me an E-Mail directly. 
+              or you can write me and send me an E-Mail directly. Once I have received your message, 
+              I will reply to you on the contact provided or the address used to contact me!
             </p>
             
             <Mark color="yellow" intensity="300">I will get back to you within 24 Hours</Mark>

@@ -14,19 +14,19 @@ const Contact = ({ section }) => {
       <input 
         className="col-span-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-10 mb-4" 
         type="text" 
-        placeholder="Provide me with any contact that allows me to reach you!" 
+        placeholder="Provide me one of your contact!" 
         onChange={ event => setContact(event.target.value) }
       />
       
       <textarea 
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-24 mb-5" 
-        placeholder="A job offer? An idea for a collaboration? A Feed-Back on one of my works? Let me know right away!"
+        placeholder="A job offer? An idea for a collaboration? Let me know right away!"
         onChange={ event => setMessage(event.target.value) }
       />
 
       { status == null &&
         <button 
-          className="w-64 shadow bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
+          className="xs:w-full sm:w-64 shadow bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
 
           disabled={!(contact && message)}
 
@@ -57,19 +57,19 @@ const Contact = ({ section }) => {
       }
 
       { status == true &&
-        <button className="w-64 shadow bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
+        <button className="xs:w-full sm:w-64 shadow bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
           Message sent! &nbsp;✔
         </button>
       }
 
       { status == false &&
-        <button className="w-64 shadow bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
+        <button className="xs:w-full sm:w-64 shadow bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
           Try again later... &nbsp;❌
         </button>
       }
 
       <button 
-        className="w-64 shadow bg-purple-500 hover:bg-purple-600  text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 xs:mt-4 sm:mt-0"
+        className="xs:w-full sm:w-64 shadow bg-purple-500 hover:bg-purple-600  text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 xs:mt-4 sm:mt-0"
         onClick={ event => {
           event.preventDefault();
 
