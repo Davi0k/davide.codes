@@ -8,9 +8,7 @@ import Contact from "../components/contact";
 
 import * as skills from "../utilities/skills";
 
-const Bold = (props) => <b className="font-semibold text-1xl">{props.children}</b>;
-
-const Underline = (props) => <span className="underline text-xl font-medium text-blue-600 cursor-pointer">{props.children}</span>;
+const Enlight = (props) => <span className="text-xl font-medium text-blue-600 cursor-pointer">{props.children}</span>;
 
 const Mono = (props) => <span className="font-mono">{props.children}</span>;
 
@@ -35,7 +33,7 @@ const Home = (props) => {
       <div className="xs:px-4 sm:px-8 xs:py-2 sm:py-6">
         <div className="grid grid-cols-3 gap-4">
           <div className="xs:col-span-3 sm:col-span-2 h-40 py-16">
-            <h1 className="text-5xl font-semibold">Davide Casale 👋🏻</h1>
+            <h1 className="text-5xl font-semibold">Davide Casale <span className="wave">👋🏻</span></h1>
             <span className="text-xl text-gray-600">{age(birthday)} Years Old Full-Stack Developer & Programmer based in Italy.</span>
           </div>
 
@@ -100,8 +98,8 @@ const Home = (props) => {
           <span className="text-lg">
             <p className="mb-4">
               The difference between a decent and a good programmer is certainly dictated by <Mono>the skills and the
-              knowledge</Mono> he has developed in his career. I often define myself as <Mono>T-Shaped</Mono>, a 
-              programmer with great experience in a single and vast field (such as <Mono>Web-Developing</Mono>) but 
+              knowledge</Mono> he has developed in his career. I often define myself as <Mono>T-Shape</Mono>, a 
+              programmer with great experience in a single and vast field, such as <Mono>Web-Developing</Mono>, but 
               who does not neglect other branches of his profession. 
             </p>
           
@@ -165,8 +163,8 @@ const Home = (props) => {
             <span className="text-lg">
               <p className="mb-4">
                 Like any respected <Mono>Developer</Mono>, I am not lacking in knowledge about all that range of Tools and Services essential 
-                to guarantee an ideal Work-Flow. Starting from the most used <Mono>Version Control Systems</Mono>, moving on to the most popular <Mono>Package Managers</Mono>, 
-                up to the best <Mono>DBMS</Mono>. This section also includes my favorite architectures, standards and protocols.
+                to guarantee an ideal Work-Flow. Starting from the most used <Mono>Version Control Systems</Mono> up 
+                to the best <Mono>DBMS</Mono>. This section also includes my favorite architectures, standards and protocols.
               </p>
 
               <p>
@@ -180,7 +178,7 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div id="contacts" className="mt-12 mb-8">
+        <div id="contacts" className="mt-12 mb-6">
           <h1 className="text-3xl font-semibold mb-3">Get in Touch 📌</h1>
 
           <span className="text-lg">
@@ -189,21 +187,19 @@ const Home = (props) => {
               an idea for a <Mono>project</Mono> or just to express your opinion on one of my work, you are in the right place!
             </p>
 
-            <p className="mb-2">
-              You can use one of the methods below to contact me and reach me manually:
+            <p className="mb-1">
+              You can use the informations below to reach me manually:
             </p>
 
             <ul className="mb-5">
-              <li>📨 <Underline>davidecasale2002@gmail.com</Underline></li>
-              <li>🖥️ <Underline>+39 340 259 8159</Underline></li>
-              <li>🏠 <Underline>Via San Giovanni Bosco, 5. Arcene (BG)</Underline></li>
+              <li>&#8226;&nbsp; 📨 <Enlight>davidecasale2002@gmail.com</Enlight></li>
+              <li>&#8226;&nbsp; 🖥️ <Enlight>+39 340 259 8159</Enlight></li>
+              <li>&#8226;&nbsp; 🏠 <Enlight>Via San Giovanni Bosco, 5. Arcene (BG)</Enlight></li>
             </ul>
 
-            <p className="mb-6">
-              Otherwise, You can complete the <Mono>Form</Mono> below 
-              by providing any of your contacts and a small description of your motivation, 
-              or you can write me and send me an <Mono>E-Mail</Mono> directly. Once I have received your message, 
-              I will reply to you on the contact provided!
+            <p className="mb-4">
+              Otherwise, you can complete the <Mono>Form</Mono> below   
+              or send me an <Mono>E-Mail</Mono> directly.
             </p>
             
             <Mark color="yellow" intensity="300">I will get back to you within 24 Hours</Mark>

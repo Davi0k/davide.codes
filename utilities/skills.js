@@ -171,33 +171,6 @@ const tools = [
   ],
   [
     {
-      name: "NPM",
-      color: "#CC2C2C",
-      skill: "95%"
-    },
-    {
-      name: "Yarn",
-      color: "#2A89B5",
-      skill: "75%"
-    },
-    {
-      name: "PIP",
-      color: "#3F7BAD",
-      skill: "90%"
-    },
-    {
-      name: "NuGet",
-      color: "#004880",
-      skill: "70%"
-    },
-    {
-      name: "Composer",
-      color: "#6A573F",
-      skill: "60%"
-    },
-  ],
-  [
-    {
       name: "MySQL",
       color: "#E59E43",
       skill: "90%"
