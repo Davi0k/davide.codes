@@ -25,7 +25,7 @@ const Navigation = (props) => (
 
     <li className="xs:col-span-2 sm:col-span-3 lg:col-span-2 mr-4 py-1 text-center py-4">
       <a className="text-xl text-gray-600 hover:text-gray-800 font-medium" href="#contacts">
-        <span className="xs:hidden sm:block">Contact Me Now</span>
+        <span className="xs:hidden sm:block">Get in Touch</span>
         <span className="xs:block sm:hidden">Contact</span>
       </a>
     </li>

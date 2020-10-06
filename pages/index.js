@@ -10,7 +10,7 @@ import * as skills from "../utilities/skills";
 
 const Bold = (props) => <b className="font-semibold text-1xl">{props.children}</b>;
 
-const Underline = (props) => <span className="underline text-1xl font-light">{props.children}</span>;
+const Underline = (props) => <span className="underline text-xl font-medium text-blue-600 cursor-pointer">{props.children}</span>;
 
 const Mono = (props) => <span className="font-mono">{props.children}</span>;
 
@@ -45,7 +45,7 @@ const Home = (props) => {
         </div>
 
         <div id="about" className="mt-20">
-          <h1 className="text-3xl font-bold mb-3">About Me 🧑🏻</h1>
+          <h1 className="text-3xl font-semibold mb-3">About Me 🧑🏻</h1>
 
           <div className="text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -95,7 +95,7 @@ const Home = (props) => {
         </div>
 
         <div id="skills" className="mt-12 py-2">
-          <h1 className="text-3xl font-bold mb-3">Skills and Knowledge 🚩</h1>
+          <h1 className="text-3xl font-semibold mb-3">Skills and Knowledge 🚩</h1>
 
           <span className="text-lg">
             <p className="mb-4">
@@ -181,16 +181,26 @@ const Home = (props) => {
         </div>
 
         <div id="contacts" className="mt-12 mb-8">
-          <h1 className="text-3xl font-bold mb-3">Contact Me Now 📌</h1>
+          <h1 className="text-3xl font-semibold mb-3">Get in Touch 📌</h1>
 
           <span className="text-lg">
-            <p className="mb-4">
+            <p className="mb-5">
               If you are interested in contacting me to propose a <Mono>collaboration</Mono>, a <Mono>job offer</Mono>, 
               an idea for a <Mono>project</Mono> or just to express your opinion on one of my work, you are in the right place!
             </p>
 
+            <p className="mb-2">
+              You can use one of the methods below to contact me and reach me manually:
+            </p>
+
+            <ul className="mb-5">
+              <li>📨 <Underline>davidecasale2002@gmail.com</Underline></li>
+              <li>🖥️ <Underline>+39 340 259 8159</Underline></li>
+              <li>🏠 <Underline>Via San Giovanni Bosco, 5. Arcene (BG)</Underline></li>
+            </ul>
+
             <p className="mb-6">
-              You can complete the <Mono>Form</Mono> below 
+              Otherwise, You can complete the <Mono>Form</Mono> below 
               by providing any of your contacts and a small description of your motivation, 
               or you can write me and send me an <Mono>E-Mail</Mono> directly. Once I have received your message, 
               I will reply to you on the contact provided!

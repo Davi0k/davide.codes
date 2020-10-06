@@ -52,7 +52,7 @@ const Contact = ({ section }) => {
             window.setTimeout(() => setStatus(null), 10000);
           }}
         >
-          Submit your request &nbsp;🖥️
+          Submit your request &nbsp;📱
         </button>
       }
 
@@ -73,7 +73,7 @@ const Contact = ({ section }) => {
         onClick={ event => {
           event.preventDefault();
 
-          window.open("mailto:main@davide.codes?subject=Hi Davide! I have an Amazing Proposal for you", "_blank");
+          window.open("mailto:davidecasale2002@gmail.com?subject=Hi Davide! I have an Amazing Proposal for you", "_blank");
         }}
       >
         Write me a message &nbsp;💬

@@ -148,18 +148,6 @@ const frameworks = [
       color: "#16B6B2",
       skill: "85%"
     }
-  ],
-  [
-    {
-      name: "Boost",
-      color: "#4286F4",
-      skill: "70%"
-    },
-    {
-      name: "Iron-Python",
-      color: "#D0CBC8",
-      skill: "60%"
-    }
   ]
 ];
 
@@ -250,13 +238,6 @@ const tools = [
       name: "Web-Socket",
       color: "#B1D1A4",
       skill: "80%"
-    }
-  ],
-  [
-    {
-      name: "JWT",
-      color: "#DC84FB",
-      skill: "95%"
     }
   ]
 ];
