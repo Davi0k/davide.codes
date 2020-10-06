@@ -98,6 +98,11 @@ const frameworks = [
       name: "Nancy",
       color: "#838383",
       skill: "65%"
+    },
+    {
+      name: "Socket.io",
+      color: "#9D579F",
+      skill: "80%"
     }
   ],
   [
@@ -230,6 +235,30 @@ const tools = [
       skill: "55%"
     }
   ],
+  [
+    {
+      name: "REST",
+      color: "#0F5891",
+      skill: "90%"
+    },
+    {
+      name: "SOAP",
+      color: "#67CCCC",
+      skill: "65%"
+    },
+    {
+      name: "Web-Socket",
+      color: "#B1D1A4",
+      skill: "80%"
+    }
+  ],
+  [
+    {
+      name: "JWT",
+      color: "#DC84FB",
+      skill: "95%"
+    }
+  ]
 ];
 
 module.exports = {

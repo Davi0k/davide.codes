@@ -10,11 +10,11 @@ const Contact = ({ section }) => {
   const [ status, setStatus ] = useState(null);
 
   return (
-    <form className="mt-8">
+    <form className="mt-6">
       <input 
         className="col-span-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-10 mb-4" 
         type="text" 
-        placeholder="Provide me one of your contact!" 
+        placeholder="Provide me one of your contacts!" 
         onChange={ event => setContact(event.target.value) }
       />
       
@@ -52,7 +52,7 @@ const Contact = ({ section }) => {
             window.setTimeout(() => setStatus(null), 10000);
           }}
         >
-          Submit your request &nbsp;🌎
+          Submit your request &nbsp;🖥️
         </button>
       }
 
@@ -76,7 +76,7 @@ const Contact = ({ section }) => {
           window.open("mailto:main@davide.codes?subject=Hi Davide! I have an Amazing Proposal for you", "_blank");
         }}
       >
-        Write me a message &nbsp;📧
+        Write me a message &nbsp;💬
       </button>
     </form> 
   );
