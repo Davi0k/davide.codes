@@ -106,19 +106,20 @@ const Home = (props) => {
 
           <span className="text-lg">
             <p className="mb-4">
-              The difference between a decent and a good programmer is certainly dictated by <Mono>the skills, the
-              knowledge and the habits</Mono> he has developed in his career. I often define myself as a 
-              programmer with great experience in a single and vast field but 
-              who does not neglect other branches of his profession. 
+              The difference between a decent and a good programmer is certainly dictated by <Mono>the Skills, the
+              Knowledge and the Habits</Mono> he has developed in his career. 
             </p>
 
             <p className="mb-4">
-              Below, I list most of my <Mono>Skills</Mono> related to Web-Developing which I consider most useful or noteworthy.
+              Since I started, I have always focused on learning well and without 
+              haste one technology at a time, increasing and speeding up my learning curve more and more, 
+              coming today to know multiple <Mono>Languages, Frameworks and Tools</Mono> useful for my work.
             </p>
 
-            <p className="mb-6">             
+            <p className="mb-6">
+              Below, I list most of my <Mono>Skills</Mono> related to Web-Developing which I consider most useful or noteworthy.
               If you want to know more, you can contact me through the appropriate section! 
-            </p>  
+            </p>
 
             <Mark color="yellow" intensity="300">The percentages allow you to understand my experience in the field</Mark>
           </span>
