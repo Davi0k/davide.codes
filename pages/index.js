@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import Head from "next/head";
 
 import Navigation from "../components/navigation";
-import Skill from "../components/skill";
-import Slider from "../components/slider";
 import Contact from "../components/contact";
+import Section from "../components/section";
 
 import * as skills from "../utilities/skills";
 
@@ -97,88 +96,34 @@ const Home = (props) => {
 
           <span className="text-lg">
             <p className="mb-4">
-              The difference between a decent and a good programmer is certainly dictated by <Mono>the skills and the
-              knowledge</Mono> he has developed in his career. I often define myself as <Mono>T-Shape</Mono>, a 
+              The difference between a decent and a good programmer is certainly dictated by <Mono>the skills, the
+              knowledge and the habits</Mono> he has developed in his career. I often define myself as <Mono>T-Shape</Mono>, a 
               programmer with great experience in a single and vast field, such as <Mono>Web-Developing</Mono>, but 
               who does not neglect other branches of his profession. 
             </p>
           
             <p className="mb-4">
               In fact, in addition to the world of Web Programming, 
-              I also love working at a low level, especially with Embedded Systems, 
+              I also love working at a low level 
               and also with the most modern platforms for <Mono>VR</Mono>, <Mono>AR</Mono> and <Mono>MR</Mono>. 
             </p>
 
-            <p> 
-              Below, I list most of my <Mono>Skills</Mono> grouped by macro-categories. 
+            <p className="mb-4"> 
+              Below, I list most of my <Mono>Skills</Mono> related to Web-Developing.
               If you want to know more, you can contact me through the appropriate section! 
-            </p>     
+            </p>  
+
+            <Mark color="yellow" intensity="300">The percentages allow you to understand my experience in the field</Mark>
           </span>
 
-          <div className="mt-10 block">
-            <h1 className="text-2xl mb-4 font-semibold">⭐&nbsp;&nbsp;Programming and Markup Languages:</h1>
+          <Section title="Programming and Markup Languages" skills={ skills.languages } />
 
-            <span className="text-lg">
-              <p className="mb-4">
-                Everything always starts with the best <Mono>Programming Languages</Mono>! 
-                Since I started my career in the world of <Mono>Information Technology</Mono>, 
-                I have always tested myself with the most complex languages,
-                without however neglecting the most popular and constantly growing ones,
-                which today make up the majority of my <Mono>Arsenal</Mono>.  
-              </p>
+          <Section title="Libraries and Frameworks" skills={ skills.frameworks } />
 
-              <p>
-
-              </p>
-            </span>
-
-            <div className="mt-5">
-              { skills.languages.map(section => <Skill section={section} key={skills.languages.indexOf(section)}/>) }
-            </div>
-          </div>
-
-          <div className="mt-10 block">
-            <h1 className="text-2xl mb-4 font-semibold">⭐&nbsp;&nbsp;Libraries and Frameworks:</h1>
-
-            <span className="text-lg">
-              <p className="mb-4">
-                <Mono>Libraries</Mono> and <Mono>Frameworks</Mono> are now the foundation of any reputable Software. 
-                Being a <Mono>Full-Stack Developer</Mono>, there are many that I use, selecting them based on the final goal. 
-                From those dedicated to the <Mono>Back-End</Mono> to those dedicated to the <Mono>Front-End</Mono>.
-              </p>
-
-              <p>
-
-              </p>
-            </span>
-
-            <div className="mt-5">
-              { skills.frameworks.map(section => <Skill section={section} key={skills.frameworks.indexOf(section)}/>) }
-            </div>
-          </div>
-
-          <div className="mt-10 block">
-            <h1 className="text-2xl mb-4 font-semibold">⭐&nbsp;&nbsp;Tools and Services:</h1>
-
-            <span className="text-lg">
-              <p className="mb-4">
-                Like any respected <Mono>Developer</Mono>, I am not lacking in knowledge about all that range of Tools and Services essential 
-                to guarantee an ideal Work-Flow. Starting from the most used <Mono>Version Control Systems</Mono> up 
-                to the best <Mono>DBMS</Mono>. This section also includes my favorite architectures, standards and protocols.
-              </p>
-
-              <p>
-                
-              </p>
-            </span>
-
-            <div className="mt-5">
-              { skills.tools.map(section => <Skill section={section} key={skills.tools.indexOf(section)}/>) }
-            </div>
-          </div>
+          <Section title="Tools and Services" skills={ skills.tools } />
         </div>
 
-        <div id="contacts" className="mt-12 mb-6">
+        <div id="contacts" className="mt-10 mb-6">
           <h1 className="text-3xl font-semibold mb-3">Get in Touch 📌</h1>
 
           <span className="text-lg">
