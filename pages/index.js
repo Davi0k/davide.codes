@@ -108,7 +108,7 @@ const Home = (props) => {
             <p className="mb-4">
               The difference between a decent and a good programmer is certainly dictated by <Mono>the skills, the
               knowledge and the habits</Mono> he has developed in his career. I often define myself as a 
-              programmer with great experience in a single and vast field, such as <Mono>Web-Developing</Mono>, but 
+              programmer with great experience in a single and vast field but 
               who does not neglect other branches of his profession. 
             </p>
 
