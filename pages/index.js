@@ -45,10 +45,15 @@ const Home = (props) => {
           <h1 className="text-3xl font-semibold mb-3">About Me 🧑🏻</h1>
 
           <div className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            I started my career in the world of <Mono>Information Technology </Mono> at 
+            the age of 13, when I started studying C++ completely <Mono>Self-Taught</Mono>.
+            
+            In a short time I discover a real passion for <Mono>Coding and Programming </Mono> and, year after year,
+            I dedicate myself more and more to the study of it, basically focusing on three fields: <Mono>Web-Developing</Mono>, <Mono>Low-Level</Mono> programming
+            and development of <Mono>VR</Mono>, <Mono>AR</Mono> and <Mono>MR</Mono> applications. 
+            
+            Since the beginning I have written and created more and more projects,
+            which I often publish on my <Mono>Github</Mono> account or which I tell about on my <Mono>Linkedin</Mono> profile.
           </div>
 
           <div className="flex grid xs:grid-cols-2 sm:grid-cols-6 mt-10 mb-12">
@@ -70,10 +75,15 @@ const Home = (props) => {
           </div>
 
           <div className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <Mono>Web programming</Mono> is the field that strikes me most and that, to date, also corresponds to my work sector. 
+            
+            I am fascinated by the <Mono>Front-End</Mono> and I love the <Mono>Back-End</Mono>. 
+            
+            My work experience begins towards the beginning  of my 17 years and stabilizes at 
+            the age of majority, thanks to my insatiable curiosity, desire to do and ambition. 
+
+            I worked mainly as a <Mono>Full-Stack Developer</Mono>, in team and alone, 
+            finding myself, despite my young age, also managing other members of my team.
           </div>
 
           <div className="flex grid grid-cols-10 mt-16">
@@ -97,30 +107,27 @@ const Home = (props) => {
           <span className="text-lg">
             <p className="mb-4">
               The difference between a decent and a good programmer is certainly dictated by <Mono>the skills, the
-              knowledge and the habits</Mono> he has developed in his career. I often define myself as <Mono>T-Shape</Mono>, a 
+              knowledge and the habits</Mono> he has developed in his career. I often define myself as a 
               programmer with great experience in a single and vast field, such as <Mono>Web-Developing</Mono>, but 
               who does not neglect other branches of his profession. 
             </p>
-          
+
             <p className="mb-4">
-              In fact, in addition to the world of Web Programming, 
-              I also love working at a low level 
-              and also with the most modern platforms for <Mono>VR</Mono>, <Mono>AR</Mono> and <Mono>MR</Mono>. 
+              Below, I list most of my <Mono>Skills</Mono> related to Web-Developing which I consider most useful or noteworthy.
             </p>
 
-            <p className="mb-4"> 
-              Below, I list most of my <Mono>Skills</Mono> related to Web-Developing.
+            <p className="mb-6">             
               If you want to know more, you can contact me through the appropriate section! 
             </p>  
 
             <Mark color="yellow" intensity="300">The percentages allow you to understand my experience in the field</Mark>
           </span>
 
-          <Section title="Programming and Markup Languages" skills={ skills.languages } />
+          <Section title="Programming and Markup Languages" skills={ skills.languages } className="mt-10" />
 
-          <Section title="Libraries and Frameworks" skills={ skills.frameworks } />
+          <Section title="Libraries and Frameworks" skills={ skills.frameworks } className="mt-6" />
 
-          <Section title="Tools and Services" skills={ skills.tools } />
+          <Section title="Tools and Services" skills={ skills.tools } className="mt-6" />
         </div>
 
         <div id="contacts" className="mt-10 mb-6">
@@ -147,10 +154,10 @@ const Home = (props) => {
               or send me an <Mono>E-Mail</Mono> directly.
             </p>
             
-            <Mark color="yellow" intensity="300">I will get back to you within 24 Hours</Mark>
+            <Mark color="yellow" intensity="300">I will get back to you within 24 Hours </Mark>
           </span>
 
-          <Contact />
+          <Contact className="mt-6" />
         </div>
       </div>
     </div>

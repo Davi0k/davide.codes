@@ -3,14 +3,14 @@ import Head from "next/head";
 
 import fetch from "node-fetch";
 
-const Contact = ({ section }) => {
+const Contact = (props) => {
   const [ contact, setContact ] = useState(null);
   const [ message, setMessage ] = useState(null);
 
   const [ status, setStatus ] = useState(null);
 
   return (
-    <form className="mt-6">
+    <form className={props.className}>
       <input 
         className="col-span-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-10 mb-4" 
         type="text" 
@@ -73,7 +73,7 @@ const Contact = ({ section }) => {
         onClick={ event => {
           event.preventDefault();
 
-          window.open("mailto:davidecasale2002@gmail.com?subject=Hi Davide! I have an Amazing Proposal for you", "_blank");
+          window.open("mailto:davidecasale2002@gmail.com?subject=Hi Davide! I have an Amazing Proposal for you.", "_blank");
         }}
       >
         Write me a message &nbsp;💬

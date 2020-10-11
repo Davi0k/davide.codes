@@ -2,7 +2,7 @@ const languages = [
   [
     {
       name: "C#",
-      color: "#3A0092",
+      color: "#621E75",
       skill: "95%"
     },
     {
@@ -66,7 +66,7 @@ const frameworks = [
   [
     {
       name: "Django",
-      color: "#162C1F",
+      color: "#1D9823",
       skill: "95%"
     },
     {
@@ -83,11 +83,6 @@ const frameworks = [
       name: "Express.js",
       color: "#91C53F",
       skill: "95%"
-    },
-    {
-      name: "Barebone.js",
-      color: "#0071B5",
-      skill: "55%"
     },
     {
       name: "Laravel",
