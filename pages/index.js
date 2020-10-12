@@ -45,12 +45,12 @@ const Home = (props) => {
           <h1 className="text-3xl font-semibold mb-3">About Me 🧑🏻</h1>
 
           <div className="text-lg">
-            <p className="mb-4">
+            <p className="mb-3">
               I started my career in the world of <Mono>Information Technology </Mono> at 
               the age of 13, when I started studying C++ completely <Mono>Self-Taught</Mono>.
             </p>
 
-            <p className="mb-4">
+            <p className="mb-3">
               In a short time I discover a real passion for <Mono>Coding and Programming </Mono> and, year after year,
               I dedicate myself more and more to the study of it, basically focusing on three fields: <Mono>Web-Developing</Mono>, <Mono>Low-Level</Mono> programming
               and development of <Mono>VR</Mono>, <Mono>AR</Mono> and <Mono>MR</Mono> applications. 
@@ -81,11 +81,11 @@ const Home = (props) => {
           </div>
 
           <div className="text-lg">
-            <p className="mb-4">
+            <p className="mb-3">
               <Mono>Web programming</Mono> is the field that strikes me most and that, to date, also corresponds to my work sector.
             </p>     
             
-            <p className="mb-4">
+            <p className="mb-3">
               My work experience begins towards the beginning  of my 17 years and stabilizes at 
               the age of majority, thanks to my insatiable curiosity, desire to do and ambition. 
             </p>
@@ -96,7 +96,7 @@ const Home = (props) => {
             </p>
           </div>
 
-          <div className="flex grid grid-cols-10 mt-16">
+          <div className="flex grid grid-cols-10 mt-12 py-2">
             <a href="https://buildyourpath.it" target="_blank" className="col-span-4 mt-5">
               <img className="xs:w-32 sm:w-64 m-auto pointer-events-none" src="partners/byp.png" />
             </a>   
@@ -116,8 +116,8 @@ const Home = (props) => {
 
           <span className="text-lg">
             <p className="mb-4">
-              The difference between a decent and a good programmer is certainly dictated by the <Mono>Skills</Mono>, the <Mono>Knowledge</Mono> 
-              and the <Mono>Habits</Mono> he has developed in his career. 
+              The difference between a decent and a good programmer is certainly dictated by the <Mono>Skills</Mono>, the <Mono>Knowledge</Mono> and
+              the <Mono>Habits</Mono> he has developed in his career. 
             </p>
 
             <p className="mb-4">
@@ -157,7 +157,6 @@ const Home = (props) => {
             <ul className="mb-5">
               <li>&#8226;&nbsp; 📨 <a href="mailto:davidecasale2002@gmail.com?subject=Hi Davide! I have an Amazing Proposal for you."><Enlight>davidecasale2002@gmail.com</Enlight></a></li>
               <li>&#8226;&nbsp; 🖥️ <a href="tel:+39340-259-8159"><Enlight>+39 340 259 8159</Enlight></a></li>
-              <li>&#8226;&nbsp; 🏠 <a href="https://maps.google.com/?ll=45.575300,9.613573"><Enlight>Via San Giovanni Bosco, 5. Arcene (BG)</Enlight></a></li>
             </ul>
 
             <p className="mb-4">
