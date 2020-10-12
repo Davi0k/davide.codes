@@ -1,7 +1,4 @@
 module.exports = {
-  purge: [],
-  variants: {},
-  plugins: [],
   theme: {
     screens: {
       "xs": "0px",

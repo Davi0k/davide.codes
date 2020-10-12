@@ -11,8 +11,5 @@ module.exports = withCSS({
 
     FROM: process.env.FROM,
     TO: process.env.TO
-  },
-  cssLoaderOptions: { 
-    url: false 
-  } 
+  }
 });
