@@ -4,7 +4,9 @@ import Head from "next/head";
 const Navigation = (props) => (
   <ul className="flex h-10 grid grid-cols-12 px-2">
     <div className="xs:col-span-3 md:col-span-2">
-      <img className="w-32 pointer-events-none" src="logo.png" alt="Logo"/>
+      <a href="https://github.com/Davi0k/davide.codes" target="_blank">
+        <img className="w-32 pointer-cursor" src="logo.png" alt="Logo"/>
+      </a> 
     </div>
 
     <div className="xs:col-span-1 md:col-span-1 lg:col-span-3"/>
