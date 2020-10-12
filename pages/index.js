@@ -32,7 +32,7 @@ const Home = (props) => {
       <div className="xs:px-4 sm:px-8 xs:py-2 sm:py-6">
         <div className="grid grid-cols-3 gap-4">
           <div className="xs:col-span-3 sm:col-span-2 h-40 py-16">
-            <h1 className="text-5xl font-semibold">Davide Casale <span className="wave">👋🏻</span></h1>
+            <h1 className="xs:text-4xl sm:text-5xl font-semibold">Davide Casale <span className="wave">👋🏻</span></h1>
             <span className="text-xl text-gray-600">{age(birthday)} Years Old Full-Stack Developer & Programmer based in Italy.</span>
           </div>
 
@@ -41,7 +41,7 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div id="about" className="mt-20">
+        <div id="about" className="mt-16 py-2">
           <h1 className="text-3xl font-semibold mb-3">About Me 🧑🏻</h1>
 
           <div className="text-lg">
