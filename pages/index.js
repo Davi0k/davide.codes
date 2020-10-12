@@ -7,7 +7,7 @@ import Section from "../components/section";
 
 import * as skills from "../utilities/skills";
 
-const Enlight = (props) => <span className="text-xl font-medium text-blue-600 cursor-pointer">{props.children}</span>;
+const Enlight = (props) => <span className="text-xl font-medium text-blue-600 hover:text-blue-700 cursor-pointer">{props.children}</span>;
 
 const Mono = (props) => <span className="font-mono">{props.children}</span>;
 
@@ -45,15 +45,21 @@ const Home = (props) => {
           <h1 className="text-3xl font-semibold mb-3">About Me 🧑🏻</h1>
 
           <div className="text-lg">
-            I started my career in the world of <Mono>Information Technology </Mono> at 
-            the age of 13, when I started studying C++ completely <Mono>Self-Taught</Mono>.
+            <p className="mb-4">
+              I started my career in the world of <Mono>Information Technology </Mono> at 
+              the age of 13, when I started studying C++ completely <Mono>Self-Taught</Mono>.
+            </p>
+
+            <p className="mb-4">
+              In a short time I discover a real passion for <Mono>Coding and Programming </Mono> and, year after year,
+              I dedicate myself more and more to the study of it, basically focusing on three fields: <Mono>Web-Developing</Mono>, <Mono>Low-Level</Mono> programming
+              and development of <Mono>VR</Mono>, <Mono>AR</Mono> and <Mono>MR</Mono> applications. 
+            </p>
             
-            In a short time I discover a real passion for <Mono>Coding and Programming </Mono> and, year after year,
-            I dedicate myself more and more to the study of it, basically focusing on three fields: <Mono>Web-Developing</Mono>, <Mono>Low-Level</Mono> programming
-            and development of <Mono>VR</Mono>, <Mono>AR</Mono> and <Mono>MR</Mono> applications. 
-            
-            Since the beginning I have written and created more and more projects,
-            which I often publish on my <Mono>Github</Mono> account or which I tell about on my <Mono>Linkedin</Mono> profile.
+            <p>
+              Since the beginning I have written and created more and more projects,
+              which I often publish on my <Mono>Github</Mono> account or which I tell about on my <Mono>Linkedin</Mono> profile.
+            </p>
           </div>
 
           <div className="flex grid xs:grid-cols-2 sm:grid-cols-6 mt-10 mb-12">
@@ -75,15 +81,19 @@ const Home = (props) => {
           </div>
 
           <div className="text-lg">
-            <Mono>Web programming</Mono> is the field that strikes me most and that, to date, also corresponds to my work sector. 
+            <p className="mb-4">
+              <Mono>Web programming</Mono> is the field that strikes me most and that, to date, also corresponds to my work sector.
+            </p>     
             
-            I am fascinated by the <Mono>Front-End</Mono> and I love the <Mono>Back-End</Mono>. 
-            
-            My work experience begins towards the beginning  of my 17 years and stabilizes at 
-            the age of majority, thanks to my insatiable curiosity, desire to do and ambition. 
+            <p className="mb-4">
+              My work experience begins towards the beginning  of my 17 years and stabilizes at 
+              the age of majority, thanks to my insatiable curiosity, desire to do and ambition. 
+            </p>
 
-            I worked mainly as a <Mono>Full-Stack Developer</Mono>, in team and alone, 
-            finding myself, despite my young age, also managing other members of my team.
+            <p>
+              I worked mainly as a <Mono>Full-Stack Developer</Mono>, in team and alone, 
+              finding myself, despite my young age, also managing other members of my <Mono>Team</Mono>.
+            </p>
           </div>
 
           <div className="flex grid grid-cols-10 mt-16">
@@ -106,14 +116,14 @@ const Home = (props) => {
 
           <span className="text-lg">
             <p className="mb-4">
-              The difference between a decent and a good programmer is certainly dictated by <Mono>the Skills, the
-              Knowledge and the Habits</Mono> he has developed in his career. 
+              The difference between a decent and a good programmer is certainly dictated by the <Mono>Skills</Mono>, the <Mono>Knowledge</Mono> 
+              and the <Mono>Habits</Mono> he has developed in his career. 
             </p>
 
             <p className="mb-4">
               Since I started, I have always focused on learning well and without 
               haste one technology at a time, increasing and speeding up my learning curve more and more, 
-              coming today to know multiple <Mono>Languages, Frameworks and Tools</Mono> useful for my work.
+              coming today to know multiple <Mono>Languages</Mono>, <Mono>Frameworks</Mono> and <Mono>Tools</Mono> useful for my work.
             </p>
 
             <p className="mb-6">
@@ -136,8 +146,8 @@ const Home = (props) => {
 
           <span className="text-lg">
             <p className="mb-5">
-              If you are interested in contacting me to propose a <Mono>collaboration</Mono>, a <Mono>job offer</Mono>, 
-              an idea for a <Mono>project</Mono> or just to express your opinion on one of my work, you are in the right place!
+              If you are interested in contacting me to propose a <Mono>Collaboration</Mono>, a <Mono>Job offer</Mono>, 
+              an idea for a <Mono>Project</Mono> or just to express your opinion on one of my work, you are in the right place!
             </p>
 
             <p className="mb-1">
@@ -145,20 +155,20 @@ const Home = (props) => {
             </p>
 
             <ul className="mb-5">
-              <li>&#8226;&nbsp; 📨 <Enlight>davidecasale2002@gmail.com</Enlight></li>
-              <li>&#8226;&nbsp; 🖥️ <Enlight>+39 340 259 8159</Enlight></li>
-              <li>&#8226;&nbsp; 🏠 <Enlight>Via San Giovanni Bosco, 5. Arcene (BG)</Enlight></li>
+              <li>&#8226;&nbsp; 📨 <a href="mailto:davidecasale2002@gmail.com?subject=Hi Davide! I have an Amazing Proposal for you."><Enlight>davidecasale2002@gmail.com</Enlight></a></li>
+              <li>&#8226;&nbsp; 🖥️ <a href="tel:+39340-259-8159"><Enlight>+39 340 259 8159</Enlight></a></li>
+              <li>&#8226;&nbsp; 🏠 <a href="https://maps.google.com/?ll=45.575300,9.613573"><Enlight>Via San Giovanni Bosco, 5. Arcene (BG)</Enlight></a></li>
             </ul>
 
             <p className="mb-4">
               Otherwise, you can complete the <Mono>Form</Mono> below   
-              or send me an <Mono>E-Mail</Mono> directly.
+              to contact me directly.
             </p>
             
             <Mark color="yellow" intensity="300">I will get back to you within 24 Hours </Mark>
           </span>
 
-          <Contact className="mt-6" />
+          <Contact className="mt-6" /> 
         </div>
       </div>
     </div>

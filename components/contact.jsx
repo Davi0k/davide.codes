@@ -3,11 +3,18 @@ import Head from "next/head";
 
 import fetch from "node-fetch";
 
+const Status = {
+  Submit: "Submit",
+  Success: "Success",
+  Error: "Error",
+  Warning: "Warning"
+};
+
 const Contact = (props) => {
   const [ contact, setContact ] = useState(null);
   const [ message, setMessage ] = useState(null);
 
-  const [ status, setStatus ] = useState(null);
+  const [ status, setStatus ] = useState(Status.Submit);
 
   return (
     <form className={props.className}>
@@ -24,14 +31,18 @@ const Contact = (props) => {
         onChange={ event => setMessage(event.target.value) }
       />
 
-      { status == null &&
+      { status == Status.Submit &&
         <button 
-          className="xs:w-full sm:w-64 shadow bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
-
-          disabled={!(contact && message)}
+          className="xs:w-full sm:w-64 shadow bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5"
 
           onClick={ async function(event) {
             event.preventDefault();
+
+            if(contact == null || message == null) {
+              setStatus(Status.Warning);
+
+              return window.setTimeout(() => setStatus(Status.Submit), 5000);
+            }
 
             const request = await fetch("/api/messages", {
               method: "POST",
@@ -45,39 +56,32 @@ const Contact = (props) => {
               })
             });
             
-            setStatus(request.status == 200);
+            setStatus(request.status == 200 ? Status.Success : Status.Error);
 
-            setContact(null); setMessage(null);
-
-            window.setTimeout(() => setStatus(null), 10000);
+            return window.setTimeout(() => setStatus(Status.Submit), 10000);
           }}
         >
           Submit your request &nbsp;📱
         </button>
       }
 
-      { status == true &&
-        <button className="xs:w-full sm:w-64 shadow bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
+      { status == Status.Success &&
+        <button className="xs:w-full sm:w-64 shadow bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5" onClick={ event => event.preventDefault() }>
           Message sent! &nbsp;✔
         </button>
       }
 
-      { status == false &&
-        <button className="xs:w-full sm:w-64 shadow bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5">
+      { status == Status.Error &&
+        <button className="xs:w-full sm:w-64 shadow bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5" onClick={ event => event.preventDefault() }>
           Try again later... &nbsp;❌
         </button>
       }
 
-      <button 
-        className="xs:w-full sm:w-64 shadow bg-purple-500 hover:bg-purple-600  text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 xs:mt-4 sm:mt-0"
-        onClick={ event => {
-          event.preventDefault();
-
-          window.open("mailto:davidecasale2002@gmail.com?subject=Hi Davide! I have an Amazing Proposal for you.", "_blank");
-        }}
-      >
-        Write me a message &nbsp;💬
-      </button>
+      { status == Status.Warning &&
+        <button className="xs:w-full sm:w-64 shadow bg-yellow-500 text-white font-bold py-2 px-4 rounded focus:outline-none font-semibold h-10 mr-5" onClick={ event => event.preventDefault() }>
+          Fill in all the information &nbsp;⚠️
+        </button>
+      }
     </form> 
   );
 }
