@@ -21,8 +21,9 @@ const Home = (props) => {
   const birthday = new Date("2002-05-02");
 
   const age = (birthday) => {
-    birthday = new Date(birthday);
-    return new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
+    let difference = Date.now() - birthday.getTime();
+    let date = new Date(difference); 
+    return Math.abs(date.getUTCFullYear() - 1970);
   }
 
   return (

@@ -8,7 +8,7 @@ const languages = [
     {
       name: "C",
       color: "#3949A9",
-      skill: "55%"
+      skill: "85%"
     },
     {
       name: "C++",
@@ -143,6 +143,23 @@ const frameworks = [
       color: "#16B6B2",
       skill: "85%"
     }
+  ],
+  [
+    {
+      name: "Three.js",
+      color: "#D79E26",
+      skill: "65%"
+    },
+    {
+      name: "A-Frame",
+      color: "#FF3067",
+      skill: "75%"
+    },
+    {
+      name: "AR.js",
+      color: "#7BB2DB",
+      skill: "70%"
+    }
   ]
 ];
 
@@ -206,6 +223,13 @@ const tools = [
       name: "Web-Socket",
       color: "#B1D1A4",
       skill: "80%"
+    }
+  ],
+  [
+    {
+      name: "Docker",
+      color: "#329DED",
+      skill: "70%"
     }
   ]
 ];
