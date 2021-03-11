@@ -5,7 +5,7 @@ const Navigation = (props) => (
   <ul className="flex h-10 grid grid-cols-12 px-2">
     <div className="xs:col-span-3 md:col-span-2">
       <a href="https://github.com/Davi0k/davide.codes" target="_blank">
-        <img className="w-32 pointer-cursor" src="logo.png" alt="Logo"/>
+        <img className="w-32 pointer-cursor" src="images/logo.png" alt="Logo"/>
       </a> 
     </div>
 

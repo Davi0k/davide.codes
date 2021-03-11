@@ -1,11 +1,6 @@
 const languages = [
   [
     {
-      name: "C#",
-      color: "#621E75",
-      skill: "95%"
-    },
-    {
       name: "C",
       color: "#3949A9",
       skill: "85%"
@@ -13,17 +8,22 @@ const languages = [
     {
       name: "C++",
       color: "#00599D",
-      skill: "70%"
+      skill: "80%"
+    },
+    {
+      name: "C#",
+      color: "#621E75",
+      skill: "95%"
     },
     {
       name: "PHP",
       color: "#767BB3",
-      skill: "45%"
+      skill: "75%"
     },
     {
       name: "Java",
       color: "#EB2D2F",
-      skill: "65%"
+      skill: "70%"
     },
     {
       name: "Ruby",
@@ -34,18 +34,18 @@ const languages = [
       name: "Python",
       color: "#336D9D",
       skill: "95%"
-    },
+    }
   ],
   [
     {
       name: "HTML",
       color: "#E96228",
-      skill: "85%"
+      skill: "90%"
     },
     {
       name: "CSS",
       color: "#244BDC",
-      skill: "60%"
+      skill: "80%"
     },
     {
       name: "Java-Script",
@@ -114,7 +114,7 @@ const frameworks = [
     {
       name: "Vue.js",
       color: "#3EB983",
-      skill: "45%"
+      skill: "55%"
     },
     {
       name: "React",
@@ -136,51 +136,17 @@ const frameworks = [
     {
       name: "Bulma",
       color: "#00D1B2",
-      skill: "40%"
+      skill: "50%"
     },
     {
       name: "Tailwind CSS",
       color: "#16B6B2",
       skill: "85%"
     }
-  ],
-  [
-    {
-      name: "Three.js",
-      color: "#D79E26",
-      skill: "65%"
-    },
-    {
-      name: "A-Frame",
-      color: "#FF3067",
-      skill: "75%"
-    },
-    {
-      name: "AR.js",
-      color: "#7BB2DB",
-      skill: "70%"
-    }
   ]
 ];
 
 const tools = [
-  [
-    {
-      name: "Git",
-      color: "#E84E32",
-      skill: "90%"
-    },
-    {
-      name: "Git-Hub",
-      color: "#EDC5AD",
-      skill: "90%"
-    },
-    {
-      name: "Git-Lab",
-      color: "#F49E25",
-      skill: "85%"
-    }
-  ],
   [
     {
       name: "MySQL",
@@ -210,26 +176,21 @@ const tools = [
   ],
   [
     {
-      name: "REST",
-      color: "#0F5891",
-      skill: "90%"
+      name: "Git",
+      color: "#E84E32",
+      skill: "95%"
     },
     {
-      name: "SOAP",
-      color: "#67CCCC",
-      skill: "65%"
-    },
-    {
-      name: "Web-Socket",
-      color: "#B1D1A4",
-      skill: "80%"
+      name: "SVN",
+      color: "#7C97C4",
+      skill: "60%"
     }
   ],
   [
     {
       name: "Docker",
       color: "#329DED",
-      skill: "70%"
+      skill: "80%"
     }
   ]
 ];

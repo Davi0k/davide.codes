@@ -38,7 +38,7 @@ const Home = (props) => {
           </div>
 
           <div className="xs:col-span-0 sm:col-span-1 xs:hidden sm:block h-40"> 
-            <img className="float-right w-56 pointer-events-none" src="profile.png" alt="Profile"/>
+            <img className="float-right w-56 pointer-events-none" src="images/profile.png" alt="Profile"/>
           </div>
         </div>
 
@@ -132,7 +132,7 @@ const Home = (props) => {
               If you want to know more, you can contact me through the appropriate section! 
             </p>
 
-            <Mark color="yellow" intensity="300">The percentages allow you to understand my experience in the field</Mark>
+            <Mark color="yellow" intensity="300">The percentages allow you to better understand my experience with that technology</Mark>
           </span>
 
           <Section title="Programming and Markup Languages" skills={ skills.languages } className="mt-10" />
@@ -156,7 +156,7 @@ const Home = (props) => {
             </p>
 
             <ul className="mb-5">
-              <li>&#8226;&nbsp; 📨 <a href="mailto:davidecasale2002@gmail.com?subject=Hi Davide! I have an Amazing Proposal for you."><Enlight>davidecasale2002@gmail.com</Enlight></a></li>
+              <li>&#8226;&nbsp; 📨 <a href="mailto:main@davide.codes?subject=Hi Davide! I have an Amazing Proposal for you."><Enlight>main@davide.codes</Enlight></a></li>
               <li>&#8226;&nbsp; 🖥️ <a href="tel:+39340-259-8159"><Enlight>+39 340 259 8159</Enlight></a></li>
             </ul>
 

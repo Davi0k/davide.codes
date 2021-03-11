@@ -41,7 +41,7 @@ const Contact = (props) => {
             if(contact == null || message == null) {
               setStatus(Status.Warning);
 
-              return window.setTimeout(() => setStatus(Status.Submit), 5000);
+              return window.setTimeout(() => setStatus(Status.Submit), 3000);
             }
 
             const request = await fetch("/api/messages", {
@@ -58,7 +58,7 @@ const Contact = (props) => {
             
             setStatus(request.status == 200 ? Status.Success : Status.Error);
 
-            return window.setTimeout(() => setStatus(Status.Submit), 10000);
+            return window.setTimeout(() => setStatus(Status.Submit), 7000);
           }}
         >
           Submit your request &nbsp;📱
