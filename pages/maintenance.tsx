@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 
 const Maintenance: NextPage<undefined> = (props: undefined) => (
-  <div className="flex flex-col items-center justify-center h-screen">
-    <span className="text-6xl">⚙</span>
+  <div className="flex flex-col items-center justify-center h-screen text-center">
+    <img src="images/gear.png" alt="Gear" className="w-20 h-20 gear"/>
 
-    <h1 className="text-4xl font-bold mt-3">https://davide.codes is currently under maintenance!</h1>
+    <h1 className="text-4xl font-bold mt-0">https://davide.codes is currently under maintenance!</h1>
 
     <p className="text-xl">We are probably working on improving the site at the moment. Come back and visit us later, we will come back soon. ⚡</p>
 
