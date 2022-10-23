@@ -7,6 +7,6 @@ export function middleware(request: NextRequest): NextResponse | undefined {
 
   url.pathname = "/maintenance";
 
-  if (url.pathname === "/")
+  if (request.nextUrl.pathname === "/") 
     return NextResponse.redirect(url);
 }
